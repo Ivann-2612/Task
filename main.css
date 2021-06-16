@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+min-height: 100vh;
+}
+body {
+    background: linear-gradient(#5664b9, #3293ee);
+    font-family: Roboto,sans-serif;
+    background-repeat: no-repeat;
+}
+.wrapper {
+    width: 300px;
+    height: 500px;
+    margin: 50px auto;
+}
+.header {
+    background-color: #2196F3;
+    width: 100%;
+    height: 80px;
+    color:#fafafa;
+   display: inline-block;
+   text-align: center;
+   
+}
+.text-div {
+    display: block;
+}
+.text-div h5 {
+    text-align: left;
+    margin-top: 25px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.text-div h3 {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+.circle-div {
+    height: 80px;
+    width: 61px;
+    float: left;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+   border: 3px solid #fafafa;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 26px; 
+    left: 10px;
+    animation: pulse 1.5s linear 1 reverse,
+               input 2s linear 1 ;
+}
+.circle-div1 {
+    height: 50px;
+    width: 70px;
+    float: left;
+}
+.circle1 {
+    width: 27px;
+    height: 27px;
+   border: 3px solid #2196F3;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 15px; 
+    left: 7px;
+    animation: pulse 1s linear 1,
+               input 2s linear 1 ;
+}
+.circle1 .fa {
+    color: #2196F3;
+    margin-left: 3px;
+    height: 5px;
+    margin-top: 2.5px;
+}
+.circle-div2 {
+    height: 50px;
+    width: 70px;
+    float: left;
+}
+.circle2 {
+    width: 27px;
+    height: 27px;
+   border: 3px solid #2196F3;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 15px; 
+    left: 7px;
+    animation: pulse 1.6s linear 1,
+               input 2s linear 1 ;
+}
+.circle2 .fa {
+    color: #2196F3;
+    margin-left: 3px;
+    height: 5px;
+    margin-top: 2.5px;
+}
+.circle-div3 {
+    height: 50px;
+    width: 70px;
+    float: left;
+}
+.circle3 {
+    width: 27px;
+    height: 27px;
+   border: 3px solid #2196F3;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 15px; 
+    left: 7px;
+    animation: pulse 2.1s linear 1,
+               input 2s linear 1 ;
+}
+.circle3 .fa {
+    color: #2196F3;
+    margin-left: 3px;
+    height: 5px;
+    margin-top: 2.5px;
+}
+.circle-div4 {
+    height: 50px;
+    width: 70px;
+    float: left;
+}
+.circle4 {
+    width: 27px;
+    height: 27px;
+   border: 3px solid #2196F3;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 15px; 
+    left: 30px;
+    animation: pulse 2.7s linear 1,
+               input 2s linear 1 ;
+}
+.circle4 .fa {
+    color: #2196F3;
+    margin-left: 3px;
+    height: 5px;
+    margin-top: 2.5px;
+}
+@keyframes pulse {
+  0% {
+    border:1px solid #fafafa;
+    transform: rotateZ(0deg);
+    opacity: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  50% {
+    border: 2px solid #fafafa;
+    transform: rotateZ(180deg);
+    opacity: 0.5;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+  }
+  100% {
+    border: 3px solid #fafafa;
+    transform: rotateZ(360deg);
+    opacity: 1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+  }
+}
+.button-div {
+    width: 100%;
+    position: relative;
+   height: 120px;
+   padding: 13px;
+  
+}
+button {
+    /* position: absolute;
+    top: 68%;
+    left: 39%; */
+    position: absolute;
+    left: 110px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #2196F3;
+    color: black;
+    font-weight: 800;
+    animation: button 2.7s linear 1;
+}
+@keyframes button {
+    0% {
+        background-color: aqua;
+    }
+    
+    50% {
+     background-color: cadetblue;
+    }
+ 
+    100% {
+      background-color: #2196F3;
+     
+    }
+}
+.main {
+    width: 100%;
+    height: 420px;
+    background-color: #fafafa;
+}
+input[type=radio] {
+    display: inline;
+    margin-left: 23px;
+    transform: scale(2);
+    position: relative;
+    margin-right: 55px;
+    top: 25px;  
+}
+
+input[type='radio'].last-type1:checked:after,
+input[type='radio'].last-type2:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -5px;
+    left: -1px;
+    animation: pulse 1.5s linear 1,
+    input 2s linear 1 ;
+    position: relative;
+    background-color: #44f579;
+    content: '✔️';
+    transform: scale(.4);
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #44f579;
+}
+#radio {
+    transform: scale(1.5);
+}
+.radio-button {
+    display: inline;
+    margin-left: 14px;
+    transform: scale(1);
+    position: relative;
+    margin-right: 55px;
+    top: 15px;  
+}
+h4 {
+    margin-left: -50px;
+    font-size: 14px;
+}
+.input-name {
+    border: none;
+    padding:5px 0 5px 0;
+    width: 220px;
+    background-color: #fafafa;
+    border-bottom: 1px solid rgb(214, 210, 210);
+}
+
+.input-name:focus {
+  outline: none;
+  border: none;
+    text-align: left;
+    animation: input 2s linear ;
+}
+
+@keyframes input {
+    0% {
+        outline: none;
+        border-left:0;
+    }
+    
+    50% {
+      outline: none;
+      border-right:1px solid #86bfee;
+    }
+ 
+    100% {
+      outline: none;
+      border-bottom: 2px solid #0b83e6;
+     
+    }
+}
+.label-email:hover {
+    transform: scale(0.95);
+}
+.first-name,
+.last-name {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    opacity: 0.8;
+}
+.last-radio {
+    padding-top: 10px;
+    opacity: 0.8;
+}
+.last-radio .last-type1 {
+    margin-left: 10px;
+    transform: scale(1.1);
+    margin-top: 5px;
+}
+.last-radio .last-type2 {
+    margin-left: 80px;
+    margin-top: 9px;
+    transform: scale(1.1);
+}
+.fa {
+    margin-top: 5px;
+}
+.contact-div {
+    height: 100px;
+    vertical-align: middle;
+    position: relative;
+}
+div .last-span1 {
+    position: absolute;
+    top: 38.9%;
+    left: 32.5%;
+    margin-left: 2px;
+}
+div .last-span2 {
+    position: absolute;
+    top: 64.6%;
+    left: 32.5%;
+}
+ h4 {
+    margin-left: 67px;
+    font-size: 11px;
+    opacity: 0.6;
+    margin-top: 22px;
+}
+
+.first-name .input-name ,
+.first-name label,
+.last-name .input-name,
+.last-name label {
+    margin-left: -50px;
+}
+label {
+ font-size: 10px; 
+ opacity: 0.7;   
+}
