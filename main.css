@@ -12,18 +12,25 @@ body {
     background-repeat: no-repeat;
 }
 .wrapper {
-    width: 300px;
+    width: 350px;
     height: 500px;
+    padding-top: 5%;
     margin: 50px auto;
 }
 .header {
     background-color: #2196F3;
     width: 100%;
     height: 80px;
-    color:#fafafa;
-   display: inline-block;
-   text-align: center;
-   
+    color: #fafafa;
+    display: inline-block;
+    text-align: center;
+    padding: 0 0 0 15px;
+}
+
+.main {
+    width: 100%;
+    height: 420px;
+    background-color: #fafafa;
 }
 .text-div {
     display: block;
@@ -207,11 +214,6 @@ button {
      
     }
 }
-.main {
-    width: 100%;
-    height: 420px;
-    background-color: #fafafa;
-}
 input[type=radio] {
     display: inline;
     margin-left: 23px;
@@ -229,7 +231,7 @@ input[type='radio'].last-type2:checked:after {
     top: -5px;
     left: -1px;
     animation: pulse 1.5s linear 1,
-    input 2s linear 1 ;
+                  input 2s linear 1;
     position: relative;
     background-color: #44f579;
     content: '✔️';
@@ -296,7 +298,7 @@ h4 {
     opacity: 0.8;
 }
 .last-radio {
-    padding-top: 10px;
+    padding: 15px;
     opacity: 0.8;
 }
 .last-radio .last-type1 {
